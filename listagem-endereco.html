@@ -9,25 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-
-    <style>
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        td,
-        th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-    </style>
 </head>
 
 <body>
@@ -48,26 +29,26 @@
             </div>
         </header>
         <div>
-        <a href="cadastro-endereço.html"><button>Cadastrar Endereço</button></a><br>
-        <h2 class="title-login">Listagem de endereço</h2>
-
-
+            <a href="cadastro-endereço.html"><button>Cadastrar Endereço</button></a><br>
+            <h2 class="title-login">Listagem de endereço</h2>
         </div>
 
         <br>
-        <table>
-            <tr>
-                <th>Título</th>
-                <th>CEP</th>
-                <th>Endereço</th>
-                <th>Número</th>
-                <th>Ações</th>
-            </tr>
-            <tbody id="listagem">
-                     
-            </tbody>
-              
-        </table>
+
+        <div class="tabela-endereco">
+            <table>
+                <tr>
+                    <th>Título</th>
+                    <th>CEP</th>
+                    <th>Endereço</th>
+                    <th>Número</th>
+                    <th>Ações</th>
+                </tr>
+                <tbody id="listagem">
+
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script src="listagem-endereco.js"></script>

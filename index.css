@@ -229,12 +229,92 @@ footer{
 }
 
 .link-login  a {
-    color: black;  /* Muda a cor do texto para preto */
+    color: rgb(255, 255, 255);  /* Muda a cor do texto para preto */
     text-decoration: none;
     white-space: nowrap;
 
 }
 
-.title-login{
+/*listagem-endereco*/
+/* Fundo geral da página e fonte */
+.title-login {
+    margin-top: 20px;
+}
 
+body {
+    background-color: #f5f7fa;  /* cinza claro */
+    font-family: 'Cinzel', serif; /* fonte importada no HTML */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalhos centralizados */
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Estilização da div que envolve a tabela */
+.tabela-endereco {
+    width: 80%;
+    max-width: 1300px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Tabela dentro da div */
+.tabela-endereco table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Células da tabela */
+.tabela-endereco td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Cabeçalhos da tabela */
+.tabela-endereco th {
+    background-color: rgba(202, 56, 238, 0.2);/* roxo forte */
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Linhas pares com cor de fundo */
+.tabela-endereco tr:nth-child(even) {
+    background-color: rgba(202, 56, 238, 0.2); /* roxo clarinho */
+}
+
+/* Botão roxo translúcido com sombra e efeito clique */
+button {
+    background-color: rgba(202, 56, 238, 0.2); /* roxo claro, quase transparente */
+    color: #ffffff; /* roxo forte no texto */
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(202, 56, 238, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.2s ease, transform 0.1s ease, border-color 0.3s ease;
+}
+
+/* Hover: fundo roxo mais forte, sombra maior e borda forte, texto branco */
+button:hover {
+    background-color: rgba(202, 56, 238, 0.5);
+    border-color: rgba(202, 56, 238, 0.5);
+    box-shadow: 0 6px 12px rgba(202, 56, 238, 0.5);
+    color: white;
+}
+
+/* Clique: efeito apertar */
+button:active {
+    transform: scale(0.80);
+    box-shadow: none;
 }
