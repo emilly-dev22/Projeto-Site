@@ -1,10 +1,10 @@
 document.getElementById("cadastro-endereco").addEventListener("submit", async function (event) {
     event.preventDefault();
-    await cadastradoEdereco();
+    await cadastradoEndereco();
 });
 
 
-async function cadastradoEdereco() {
+async function cadastradoEndereco() {
     let token = JSON.parse(localStorage.getItem("user"));
 
     let titulo = document.getElementById("titulo").value

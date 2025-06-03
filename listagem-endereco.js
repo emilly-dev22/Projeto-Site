@@ -84,7 +84,7 @@ async function atualizar(id) {
 
         if(updateApi.ok){
             alert("Endereço atualizado com sucesso!");
-            listagemEdereco(); //gera nova lista
+            listagemEndereco(); //gera nova lista
         } else {
             let err = await updateApi.json();
             alert("Erro ao atualizar: " + (err.message || "Erro desconhecido"));
@@ -110,14 +110,14 @@ async function deletar(id) {
 
     if(api.ok){
         alert("Endereço deletado com sucesso!");
-        listagemEdereco();
+        listagemEndereco();
     } else {
         let err = await api.json();
         alert("Erro ao deletar: " + (err.message || "Erro desconhecido"));
     }
 }
 
-listagemEdereco();
+listagemEndereco();
 
 window.atualizar = atualizar;
 window.deletar = deletar;
