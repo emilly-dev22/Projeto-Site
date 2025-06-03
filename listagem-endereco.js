@@ -1,23 +1,23 @@
-async function listagemEdereco() {
+async function listagemEndereco() {
     let token = JSON.parse(localStorage.getItem("user"));
 
     let api = await fetch("https://go-wash-api.onrender.com/api/auth/address", {
         method: "GET",
         headers: {
-            "Content-Type": "application/json",
-            "Authorization": "Bearer " + token.access_token
+            "Content-Type": "application/json", //informa que o conteudo é json
+            "Authorization": "Bearer " + token.access_token //vai enviar o token recebido no formato bearer e liberar os endereços
         }
     });
 
     if (api.ok) {
-        let response = await api.json();
-        let tbody = document.getElementById("listagem");
-        tbody.innerHTML = "";
+        let response = await api.json(); //se for ok, vai transformar novamente em javascript e nos retornar
+        let tbody = document.getElementById("listagem"); //vai selecionar a tabela que tem o ID listagem
+        tbody.innerHTML = ""; //limpa o conteudo
 
         response.data.forEach(element => {
-            let idDoEndereco = element._id || element.id; 
+            let idDoEndereco = element._id || element.id; //pega o elemento que retornar da esquerda ou o da direita
 
-            let el = `
+            let el = ` 
             <tr>
                 <td>${element.title}</td>
                 <td>${element.cep}</td>
@@ -29,7 +29,7 @@ async function listagemEdereco() {
                 </td>
             </tr>
             `;
-            tbody.innerHTML += el;
+            tbody.innerHTML += el; //vai adicionar mais uma linha sem apagar o que esta la e colocar o conteudo que passamos
         });
 
     } else {
@@ -84,7 +84,7 @@ async function atualizar(id) {
 
         if(updateApi.ok){
             alert("Endereço atualizado com sucesso!");
-            listagemEdereco();
+            listagemEdereco(); //gera nova lista
         } else {
             let err = await updateApi.json();
             alert("Erro ao atualizar: " + (err.message || "Erro desconhecido"));
