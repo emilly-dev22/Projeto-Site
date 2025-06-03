@@ -2,13 +2,11 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Maison des Parfums</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
@@ -16,7 +14,7 @@
         <header class="menu">
             <div class="container">
                 <div class="logo">
-                    <img src="imagens/logo.png" alt="logo">
+                    <img src="imagens/logo.png" alt="logo" />
                     <h1>Maison des Parfums</h1>
                 </div>
 
@@ -28,26 +26,27 @@
                 </nav>
             </div>
         </header>
-        <div>
-            <a href="cadastro-endereço.html"><button>Cadastrar Endereço</button></a><br>
-            <h2 class="title-login">Listagem de endereço</h2>
-        </div>
 
-        <br>
+        <h2 class="title-login">Listagem de endereço</h2>
 
         <div class="tabela-endereco">
             <table>
-                <tr>
-                    <th>Título</th>
-                    <th>CEP</th>
-                    <th>Endereço</th>
-                    <th>Número</th>
-                    <th>Ações</th>
-                </tr>
-                <tbody id="listagem">
-
-                </tbody>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>CEP</th>
+                        <th>Endereço</th>
+                        <th>Número</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="listagem"></tbody>
             </table>
+        </div>
+
+        <!-- Botão depois da tabela -->
+        <div style="margin-top: 20px;">
+            <button onclick="window.location.href='cadastro-endereço.html'">Cadastrar Endereço</button>
         </div>
     </div>
 

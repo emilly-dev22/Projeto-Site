@@ -318,3 +318,24 @@ button:active {
     transform: scale(0.80);
     box-shadow: none;
 }
+
+button {
+    width: 50%;
+    background: rgba(202, 56, 238, 0.2);
+    color: white;
+    border: none;
+    margin: 10px auto;  /* ESSENCIAL: auto nas laterais */
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    display: block; 
+}
+
+
+
+
+
+
+
