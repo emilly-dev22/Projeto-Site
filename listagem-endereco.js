@@ -4,18 +4,18 @@ async function listagemEndereco() {
     let api = await fetch("https://go-wash-api.onrender.com/api/auth/address", {
         method: "GET",
         headers: {
-            "Content-Type": "application/json", //informa que o conteudo é json
-            "Authorization": "Bearer " + token.access_token //vai enviar o token recebido no formato bearer e liberar os endereços
+            "Content-Type": "application/json", 
+            "Authorization": "Bearer " + token.access_token  
         }
     });
 
     if (api.ok) {
-        let response = await api.json(); //se for ok, vai transformar novamente em javascript e nos retornar
-        let tbody = document.getElementById("listagem"); //vai selecionar a tabela que tem o ID listagem
-        tbody.innerHTML = ""; //limpa o conteudo
+        let response = await api.json(); 
+        let tbody = document.getElementById("listagem"); 
+        tbody.innerHTML = ""; 
 
         response.data.forEach(element => {
-            let idDoEndereco = element._id || element.id; //pega o elemento que retornar da esquerda ou o da direita
+            let idDoEndereco = element._id || element.id; 
 
             let el = ` 
             <tr>
@@ -29,7 +29,7 @@ async function listagemEndereco() {
                 </td>
             </tr>
             `;
-            tbody.innerHTML += el; //vai adicionar mais uma linha sem apagar o que esta la e colocar o conteudo que passamos
+            tbody.innerHTML += el; 
         });
 
     } else {
@@ -84,7 +84,7 @@ async function atualizar(id) {
 
         if(updateApi.ok){
             alert("Endereço atualizado com sucesso!");
-            listagemEndereco(); //gera nova lista
+            listagemEndereco(); 
         } else {
             let err = await updateApi.json();
             alert("Erro ao atualizar: " + (err.message || "Erro desconhecido"));

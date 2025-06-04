@@ -229,33 +229,31 @@ footer{
 }
 
 .link-login  a {
-    color: rgb(255, 255, 255);  /* Muda a cor do texto para preto */
+    color: rgb(255, 255, 255);  
     text-decoration: none;
     white-space: nowrap;
 
 }
 
-/*listagem-endereco*/
-/* Fundo geral da página e fonte */
 .title-login {
     margin-top: 20px;
 }
 
 body {
-    background-color: #f5f7fa;  /* cinza claro */
-    font-family: 'Cinzel', serif; /* fonte importada no HTML */
+    background-color: #f5f7fa;  
+    font-family: 'Cinzel', serif; 
     color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* Cabeçalhos centralizados */
+
 h1, h2 {
     text-align: center;
     color: #2c3e50;
 }
 
-/* Estilização da div que envolve a tabela */
+
 .tabela-endereco {
     width: 80%;
     max-width: 1300px;
@@ -266,37 +264,37 @@ h1, h2 {
     padding: 20px;
 }
 
-/* Tabela dentro da div */
+
 .tabela-endereco table {
     width: 100%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
 }
 
-/* Células da tabela */
+
 .tabela-endereco td {
     padding: 12px;
     border-bottom: 1px solid #ddd;
 }
 
-/* Cabeçalhos da tabela */
+
 .tabela-endereco th {
-    background-color: rgba(202, 56, 238, 0.2);/* roxo forte */
+    background-color: rgba(202, 56, 238, 0.2);
     color: white;
     padding: 12px;
     text-align: left;
     font-weight: 600;
 }
 
-/* Linhas pares com cor de fundo */
+
 .tabela-endereco tr:nth-child(even) {
-    background-color: rgba(202, 56, 238, 0.2); /* roxo clarinho */
+    background-color: rgba(202, 56, 238, 0.2); 
 }
 
-/* Botão roxo translúcido com sombra e efeito clique */
+
 button {
-    background-color: rgba(202, 56, 238, 0.2); /* roxo claro, quase transparente */
-    color: #ffffff; /* roxo forte no texto */
+    background-color: rgba(202, 56, 238, 0.2); 
+    color: #ffffff; 
     padding: 12px 24px;
     font-size: 16px;
     border-radius: 5px;
@@ -305,7 +303,7 @@ button {
     transition: background-color 0.3s ease, box-shadow 0.2s ease, transform 0.1s ease, border-color 0.3s ease;
 }
 
-/* Hover: fundo roxo mais forte, sombra maior e borda forte, texto branco */
+
 button:hover {
     background-color: rgba(202, 56, 238, 0.5);
     border-color: rgba(202, 56, 238, 0.5);
@@ -313,7 +311,7 @@ button:hover {
     color: white;
 }
 
-/* Clique: efeito apertar */
+
 button:active {
     transform: scale(0.80);
     box-shadow: none;
@@ -324,7 +322,7 @@ button {
     background: rgba(202, 56, 238, 0.2);
     color: white;
     border: none;
-    margin: 10px auto;  /* ESSENCIAL: auto nas laterais */
+    margin: 10px auto;  
     border-radius: 12px;
     padding: 10px 20px;
     font-size: 16px;
